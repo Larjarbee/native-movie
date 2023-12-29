@@ -6,6 +6,8 @@ import { Platform, View, Text } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+import ScreenHeaderBtn from '../../components/ScreenHeaderBtn';
 
 export default function TabsLayout() {
   return (
@@ -17,7 +19,7 @@ export default function TabsLayout() {
           borderTopWidth: 0,
         },
         tabBarActiveTintColor: '#872341',
-        headerShown: false,
+        // headerShown: false,
       }}
       tabBar={(props) =>
         Platform.OS === 'ios' ? (
@@ -43,6 +45,22 @@ export default function TabsLayout() {
         options={{
           href: '/home',
           title: '',
+          // headerTransparent: true,
+          // headerBlurEffect: true,
+          // headerShadowVisible: false,
+          // headerLeft: () => (
+          //   <Text
+          //     style={{ fontFamily: 'DMBold' }}
+          //     className='text-white text-lg'
+          //   >
+          //     Welcome Abiodun
+          //   </Text>
+          // ),
+          // headerRight: () => (
+          //   <ScreenHeaderBtn
+          //     iconUrl={<AntDesign name='search1' size={24} color='white' />}
+          //   />
+          // ),
           tabBarIcon: ({ color }) => (
             <View
               style={{

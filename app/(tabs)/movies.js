@@ -3,7 +3,7 @@ import React from 'react';
 
 const Movies = () => {
   return (
-    <View>
+    <View style={{ flex: 1, backgroundColor: '#040D12' }}>
       <Text>Movies</Text>
     </View>
   );
